@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>First PHP</title>
 </head>
+
 <body>
-    
+
 <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
@@ -31,5 +32,25 @@
     </header>
 </div>
 
+<div class="container mt-5">
+  <h3>Our articles</h3>
+  <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+      <h4 class="my-0 fw-normal">Free</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>10 users included</li>
+        <li>2 GB of storage</li>
+        <li>Email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+    </div>
+  </div>
+      
+</div>
+  
 </body>
 </html>
