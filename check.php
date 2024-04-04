@@ -17,3 +17,10 @@
         echo $error;
         exit;
     }
+
+    $subject = "=?utf-8?B?".base64_encode("Test message")."?=";
+    $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html;charset=utf-8\r\n";
+
+    mail('admin@suncho.ru', $subject, $message, $headers);
+
+    header('Location: /about.php');
