@@ -8,14 +8,21 @@
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="index.php" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="pricing.php" class="nav-link px-2">Pricing</a></li>
-        <li><a href="about.php" class="nav-link px-2">About</a></li>
+        <li><a href="/index.php" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="/pricing.php" class="nav-link px-2">Pricing</a></li>
+        <li><a href="/about.php" class="nav-link px-2">About</a></li>
       </ul>
 
+      <?php
+        if($_COOKIE['user'] == 'true'):
+      ?>
+      <button type="button" class="btn btn-primary">Profile</button>
+      <?php else: ?>
+
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <button type="button" class="btn btn-outline-primary me-2" href="/auth.php">Login</button>
+        <button type="button" class="btn btn-primary" href="/auth.php">Sign-up</button>
       </div>
+      <?php endif; ?>
     </header>
 </div>
