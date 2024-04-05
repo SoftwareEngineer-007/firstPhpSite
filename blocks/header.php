@@ -16,7 +16,7 @@
       <?php
         if($_COOKIE['user'] == 'true'):
       ?>
-      <button type="button" class="btn btn-primary">Profile</button>
+      <button type="button" class="btn btn-primary" href="/auth.php">Profile</button>
       <?php else: ?>
 
       <div class="col-md-3 text-end">
